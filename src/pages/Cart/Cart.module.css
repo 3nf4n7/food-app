@@ -2,6 +2,11 @@
 	margin-bottom: 40px;
 }
 
+.cart-wrap {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .line {
 	max-width: 512px;
 	display: flex;
