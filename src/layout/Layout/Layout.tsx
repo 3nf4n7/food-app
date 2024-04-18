@@ -49,13 +49,15 @@ export function Layout() {
 					</NavLink>
 					
 				</div>
-				<Button className={styles.exit} onClick={logout}>
+				<Button className={styles['exit']} onClick={logout}>
 					<img src="/exit.svg" alt="" />
 					Выйти
 				</Button>
 			</div>
 		
-			<Outlet />
+			<div className={styles['content']}>
+				<Outlet />
+			</div>
 		</div>
 	);
 }

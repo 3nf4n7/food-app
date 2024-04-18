@@ -1,10 +1,4 @@
-.menu-wrapper {
-    padding: 39px 64px;
-    width: 100%;
-}
-
 .menu-search-bar {
-    display: flex;
-    justify-content: space-between;
-
+	display: flex;
+	justify-content: space-between;
 }
