@@ -17,7 +17,6 @@ export default function Cart() {
 	const [cartProducts, setCartProducts] = useState<Product[]>([]);
 	const items = useSelector((s: RootState) => s.cart.items);
 	const jwt = useSelector((s: RootState) => s.user.jwt);
-	const [disabled, setDisabled] = useState<boolean>(true);
 	const dispatch = useDispatch<AppDispatch>();
 	const navigate = useNavigate();
 	const total = items.map(i => {
