@@ -1,9 +1,10 @@
 .menu-wrapper {
     padding: 39px 64px;
+    width: 100%;
 }
 
 .menu-search-bar {
     display: flex;
-    gap: 188px;
-    
+    justify-content: space-between;
+
 }
