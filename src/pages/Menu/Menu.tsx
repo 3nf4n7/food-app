@@ -11,6 +11,7 @@ export default function Menu() {
 	const [products, setProducts] = useState<Product[]>([]);
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [error, setError] = useState<string | undefined>();
+	
 
 	const getMenu= async () => { 
 		try {
