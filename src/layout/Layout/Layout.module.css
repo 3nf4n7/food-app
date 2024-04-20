@@ -1,6 +1,36 @@
 .layout {
 	display: flex;
 	min-height: 100vh;
+	overflow: hidden;
+}
+
+.sidebar-icon {
+	display: none;
+	position: fixed;	
+	top: 50px;
+	left: 20px;
+	background: none;
+	border: none;
+	z-index: 2;
+	transition: 1s;
+
+	@media (max-width: 750px) {
+		display: block;
+	}
+}
+
+.sidebar-icon-active {
+	left: 170px;
+	transition: 1s;
+}
+
+.sidebar-icon img {
+	width: 25px;
+}
+
+.sidebar-active {
+	margin-left: 0 !important;
+	transition: 1s;
 }
 
 .sidebar {
@@ -10,7 +40,15 @@
 	border-right: 1px solid var(--separator-color);
 	display: flex;
 	flex-direction: column;
-    height: 90vh;
+    height: 100vh;
+	z-index: 1;
+	background-color: aliceblue;
+	transition: 1s;
+	
+	@media (max-width: 750px) {
+		position: fixed;
+		margin-left: -220px;	
+	}
 }
 
 .exit {
@@ -19,6 +57,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 9px;
+	margin-bottom: 100px;
 }
 
 .menu {

@@ -1,6 +1,10 @@
 .layout {
     display: flex;
     min-height: 100vh;
+
+    @media (max-width: 1140px) {
+        flex-direction: column;
+    }
 }
 
 .logo {
@@ -8,6 +12,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1140px) {
+        flex: 0;
+        height: 150px;
+        margin-top: 50px;
+    }
+}
+
+.logo img {
+    @media (max-width: 1140px) {
+        width: 150px;
+    }
 }
 
 .content {
@@ -16,4 +32,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1140px) {
+        border: none;
+        padding: 20px;
+        align-items: start;
+    }
 }
